@@ -3,13 +3,10 @@ import { Box, Typography } from '@mui/material';
 import LocalOfferIcon from '@mui/icons-material/LocalOffer'; 
 import { useCart } from '../../context/CartContext';
 import { ServerURL } from '../../server/serverUrl';
-import { useTheme } from '@mui/material/styles';
 
 const DeliveryBanner = () => {
-  const theme = useTheme();
   const { cartItems } = useCart();
   const [SavingsAmount, setSavingsAmount] = React.useState(0);
-  const [DeliveryFee, setDeliveryFee] = React.useState(0);
 
   useEffect(() => {
     if (cartItems.length > 0) {
@@ -17,10 +14,8 @@ const DeliveryBanner = () => {
       const totalPrice = cartItems.reduce((acc, item) => acc + (item.totalPrice || 0), 0);
   
       setSavingsAmount(totalMRP - totalPrice);
-      setDeliveryFee(0);
     } else {
       setSavingsAmount(0);
-      setDeliveryFee(0);
     }
   }, [cartItems]);
   return (

@@ -6,14 +6,12 @@ import { Visibility, VisibilityOff } from '@mui/icons-material';
 import AppLogo from '../logo/AppLogo';
 import {ServerURL} from '../../server/serverUrl';
 import {useAuth} from '../../context/authContext';
-import { useTheme } from '@mui/material/styles';
 import CircularLoader from '../../components/circular-loader';
 
 //API's
 import { checkExistingUser, registerUser } from '../../services/userServices';
 
 export default function AppRegister({ RegisterDrawerOpen, setLoginDrawerOpen, handleAuthDrawerToggle }) {
-  const theme = useTheme();
   const { setIsAuthenticated, setIsAuthenticatedName } = useAuth();
   const [showLoader, setShowLoader] = React.useState(false);
   const [showPassword, setShowPassword] = useState(false);

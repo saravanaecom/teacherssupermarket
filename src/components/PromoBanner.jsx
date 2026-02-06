@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, Grid } from '@mui/material';
-import { LocalOffer, Verified, Star } from '@mui/icons-material';
+import { LocalOffer, Verified } from '@mui/icons-material';
 
 const PromoBanner = () => {
     return (

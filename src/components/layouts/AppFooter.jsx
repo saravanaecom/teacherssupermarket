@@ -5,11 +5,9 @@ import { Instagram, Twitter, Facebook, LinkedIn } from '@mui/icons-material';
 import AppLogo from '../logo/AppLogo';
 import PlayStrore from '../../assets/play-store.svg';
 import AppStrore from '../../assets/app-store.svg';
-import { useTheme } from '@mui/material/styles';
 import { ServerURL } from '../../server/serverUrl';
 
 const AppFooter = ({ CompanyDetails }) => {
-    const theme = useTheme();
     return (
         <>
             <Box sx={{ 

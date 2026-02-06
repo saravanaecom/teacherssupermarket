@@ -14,11 +14,9 @@ import Paper from '@mui/material/Paper';
 import AppCart from '../cart/AppCart';
 import { useAuth } from '../../context/authContext';
 import { useCart } from '../../context/CartContext';
-import { useTheme } from '@mui/material/styles';
 import AppLogin from '../authentication/AppLogin';
 
 export default function AppBottomNavigation() {
-  const theme = useTheme();
   const { isAuthenticated } = useAuth();
   const {cartItems} = useCart();
   const [value, setValue] = useState(0);
