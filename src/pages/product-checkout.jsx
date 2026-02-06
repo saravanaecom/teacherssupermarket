@@ -181,7 +181,7 @@ export default function ProductCheckout() {
       }
 
 
-      const findDeliveryCharge = () => {
+  const findDeliveryCharge = React.useCallback(() => {
         const chargeData = deliverychargelist.find(item => 
             distance >= item.StartKM && distance <= item.EndKM
         );
@@ -193,12 +193,11 @@ export default function ProductCheckout() {
             setDeliveryCharge(0);
             console.log("No matching range found.");
         }
-    };
+    }, [distance, deliverychargelist]);
     
-    // Example: setting distance to 11 and finding delivery charge
     React.useEffect(() => {
         findDeliveryCharge();
-    }, [distance]); 
+    }, [findDeliveryCharge]); 
 
 
 
@@ -251,9 +250,10 @@ export default function ProductCheckout() {
     
 
     useEffect(() => {
-        if (selectedAddress) {
+        if (selectedAddress && adminlatitude && adminLangitude) {
             handleCalculateDistance();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [selectedAddress,adminlatitude,adminLangitude]);
     
     useEffect(() => {

@@ -371,6 +371,7 @@ const ProductList = () => {
     }
   
     setProductLists(sortedProducts);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productFilterName]);
   
 
