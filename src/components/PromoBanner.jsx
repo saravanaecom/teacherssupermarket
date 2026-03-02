@@ -48,14 +48,15 @@ const PromoBanner = () => {
                                     color: '#1a1a2e',
                                     lineHeight: 1.2
                                 }}>
-                                    சிறந்த விலை உத்தரவாதம்
+                                    தரமான சேவை உறுதி
+
                                 </Typography>
                                 <Typography sx={{ 
                                     fontSize: { xs: '11px', sm: '12px' },
                                     color: '#4a4a4a',
                                     fontWeight: 500
                                 }}>
-                                    Best Price Guarantee
+                                    quality service guarantee
                                 </Typography>
                             </Box>
                         </Box>
@@ -85,14 +86,15 @@ const PromoBanner = () => {
                                     color: '#1a1a2e',
                                     lineHeight: 1.2
                                 }}>
-                                    100% தரம் உறுதி
+                                 குறைந்த விலை உத்தரவாதம்
+
                                 </Typography>
                                 <Typography sx={{ 
                                     fontSize: { xs: '11px', sm: '12px' },
                                     color: '#4a4a4a',
                                     fontWeight: 500
                                 }}>
-                                    100% Quality Assured
+                                    lowest price guarantee
                                 </Typography>
                             </Box>
                         </Box>

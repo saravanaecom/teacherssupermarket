@@ -79,10 +79,10 @@ const AppFooter = ({ CompanyDetails }) => {
                                 </Typography>
                             </Box>
                             <Box>
-                                <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>Mobile: {ServerURL.COMPANY_MOBILE}</Typography>
+                                <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>Mobile: {ServerURL.COMPANY_MOBILE}, 8939695238 </Typography>
                             </Box>
                             <Box>
-                                <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>Email: {ServerURL.COMPANY_EMAIL}</Typography>
+                                <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>Email: teacherssupermarket@gmail.com</Typography>
                             </Box>
                         </Grid>
 

@@ -172,7 +172,7 @@ export default function AppHeader() {
             <Grid item xs={6} sm={3} md={5} sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end', alignItems: 'center', gap: '24px' }}>
               <Button sx={{ color: '#FFFFFF', textTransform: 'none', display: { xs: 'none', md: 'block' } }}>
                 <Typography component={"p"} sx={{ fontFamily: 'inherit', fontWeight: 600, color: '#FFFFFF' }}>WhatsApp Only<br />
-                <span style={{fontSize: 14, color: '#FFF5EB'}}>{ServerURL.COMPANY_MOBILE}</span>
+                <span style={{fontSize: 14, color: '#FFF5EB'}}>{ServerURL.COMPANY_MOBILE}, 8939695238 </span>
                 </Typography>
               </Button>
               <Button sx={{ color: '#FFFFFF', fontWeight: 600, fontFamily: 'inherit', textTransform: 'none', display: { xs: 'none', md: 'none' } }}><Link to={"/"} style={{ color: '#FFFFFF' }}>Home</Link></Button>
