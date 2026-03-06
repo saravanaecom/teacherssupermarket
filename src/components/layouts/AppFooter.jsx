@@ -84,6 +84,10 @@ const AppFooter = ({ CompanyDetails }) => {
                             <Box>
                                 <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>Email: teacherssupermarket@gmail.com</Typography>
                             </Box>
+
+                            <Box>
+                                <Typography component={'p'} sx={{ mt: 1, color: '#E8F5E9' }}>website: www.tsmarket.in</Typography>
+                            </Box>
                         </Grid>
 
                         {/* Right section */}

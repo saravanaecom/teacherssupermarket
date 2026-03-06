@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Box, Typography, Grid, Card, CardContent, Divider } from '@mui/material';
 import { School, Agriculture, Favorite, Phone, Email } from '@mui/icons-material';
+import Language from "@mui/icons-material/Language";
 
 const AboutTSM = () => {
     return (
@@ -133,14 +134,7 @@ const AboutTSM = () => {
                     textAlign: 'center',
                     boxShadow: '0 8px 24px rgba(19, 136, 8, 0.3)'
                 }}>
-                    <Typography variant="h4" sx={{ 
-                        fontWeight: 700, 
-                        color: '#FFFFFF',
-                        fontSize: { xs: '22px', sm: '28px', md: '36px' },
-                        mb: 2
-                    }}>
-                        TSM – Teacher's Super Market
-                    </Typography>
+                
                     <Typography variant="h5" sx={{ 
                         fontWeight: 600, 
                         color: '#FFF5EB',
@@ -156,6 +150,17 @@ const AboutTSM = () => {
                     }}>
                         என் எண்ணத்தில் எந்த சுயநலமும் இல்லை என்பதற்கு இந்த பெயர் பலகையே உங்கள் முன் சமர்ப்பிக்கின்றேன்
                     </Typography>
+
+
+                    <Typography variant="h4" sx={{ 
+                        fontWeight: 700, 
+                        color: '#FFFFFF',
+                        fontSize: { xs: '22px', sm: '28px', md: '36px' },
+                        mb: 2
+                    }}>
+                        TSM – Teacher's Super Market
+                    </Typography>
+
                 </Box>
 
                 {/* Target Audience Cards */}
@@ -201,7 +206,7 @@ const AboutTSM = () => {
                                     mt: 2,
                                     fontWeight: 600
                                 }}>
-                                    கல்வி என்னும் அமிர்தம் கொடுக்கும் ஆசிரியர் & அவர்களை நமக்கு வரமாய் கொடுத்த அவர்கள் குடும்பம் வறுமையின் பிடியிலும் & பசியில் பிடியிலும் இருக்க கூடாது என்பதே நமது பார்வை
+                                    கல்வி என்னும் அமிர்தம் கொடுக்கும் ஆசிரியர் & அவர்களை நமக்கு வரமாய் கொடுத்த அவர்கள் குடும்பம் வறுமையின் பிடியிலும் & பசியின் பிடியிலும் இருக்க கூடாது என்பதே நமது பார்வை
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -230,7 +235,7 @@ const AboutTSM = () => {
                                     <li>உலகத்தின் முதன்மை பொறுப்பாளர்கள்</li>
                                     <li>எல்லாரும் நலத்துடன் வாழவைப்பவர்கள்</li>
                                     <li>தானும் & தன் குடும்பமும் வறுமையில் / கஷ்டத்தில் / நஷ்டத்தில் வாழும் நிலை இருந்தாலும் தன்னலம் இல்லா நல்லவர்கள்</li>
-                                    <li>மேன்மை வழக்கை ஆசை இல்லை / அதிக ஈர்ப்பு இல்லை</li>
+                                    <li>மேன்மை வாழ்க்கை ஆசை இல்லை / அதிக ஈர்ப்பு இல்லை</li>
                                 </Box>
                                 <Typography sx={{ 
                                     fontSize: { xs: '14px', sm: '15px' },
@@ -326,18 +331,69 @@ const AboutTSM = () => {
                                     <li>என்னிடம் நிலம் உண்டு ஆனால் செலவீனம் இருப்பு இல்லை பரவாயில்லை நாங்கள் துணை நிற்கின்றோம் சேர்ந்து விவசாயம் செய்யலாம்</li>
                                     <li>விவசாயக்கடன் உள்ளது பரவாயில்லை சேர்ந்து வேலை செய்து கடனை அடைக்கலாம் தவறான முடிவுகள் எடுக்க வேண்டாம் நாங்கள் துணை நிற்கின்றோம்</li>
                                 </Box>
-                                <Box sx={{ mt: 3, p: 2, background: '#FFFFFF', borderRadius: '8px', border: '2px solid #FF9933' }}>
-                                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-                                        <Phone sx={{ color: '#FF9933', mr: 1 }} />
-                                        <Typography sx={{ fontWeight: 600, color: '#1a1a2e' }}>8667522314</Typography>
-                                    </Box>
-                                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                                        <Email sx={{ color: '#FF9933', mr: 1 }} />
-                                        <Typography sx={{ fontWeight: 600, color: '#1a1a2e', fontSize: { xs: '12px', sm: '14px' } }}>
-                                            teacherssupermarket@gmail.com
-                                        </Typography>
-                                    </Box>
-                                </Box>
+                                <Box
+  sx={{
+    mt: 3,
+    p: 2,
+    background: "#FFFFFF",
+    borderRadius: "8px",
+    border: "2px solid #FF9933",
+  }}
+>
+  {/* Phone Numbers */}
+  <Box
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: 2,
+      mb: 1,
+    }}
+  >
+    <Phone sx={{ color: "#FF9933" }} />
+
+    <Typography sx={{ fontWeight: 600, color: "#1a1a2e" }}>
+      8667522314
+    </Typography>
+    <Phone sx={{ color: "#FF9933" }} />
+    <Typography sx={{ fontWeight: 600, color: "#1a1a2e" }}>
+      8939695238
+    </Typography>
+  </Box>
+
+  {/* Website */}
+  <Box sx={{ display: "flex", alignItems: "center", mb: 1 }}>
+    <Language sx={{ color: "#FF9933", mr: 1 }} />
+
+    <Typography
+      component="a"
+      href="https://www.tsmarket.in"
+      target="_blank"
+      sx={{
+        fontWeight: 600,
+        color: "#1a1a2e",
+        textDecoration: "none",
+      }}
+    >
+      www.tsmarket.in
+    </Typography>
+  </Box>
+
+  {/* Email */}
+  <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Email sx={{ color: "#FF9933", mr: 1 }} />
+
+    <Typography
+      sx={{
+        fontWeight: 600,
+        color: "#1a1a2e",
+        fontSize: { xs: "12px", sm: "14px" },
+      }}
+    >
+      teacherssupermarket@gmail.com
+    </Typography>
+  </Box>
+</Box>
                             </CardContent>
                         </Card>
                     </Grid>
@@ -380,18 +436,65 @@ const AboutTSM = () => {
                                 }}>
                                     உங்கள் தேவைகள் நாங்கள் உதவுகிறோம் உங்கள் வாழ்க்கை மேன்பட துணை நிற்கின்றோம்
                                 </Typography>
-                                <Box sx={{ mt: 3, p: 2, background: '#FFFFFF', borderRadius: '8px', border: '2px solid #138808' }}>
-                                    <Box sx={{ display: 'flex', alignItems: 'center', mb: 1 }}>
-                                        <Phone sx={{ color: '#138808', mr: 1 }} />
-                                        <Typography sx={{ fontWeight: 600, color: '#1a1a2e' }}>8667522314</Typography>
-                                    </Box>
-                                    <Box sx={{ display: 'flex', alignItems: 'center' }}>
-                                        <Email sx={{ color: '#138808', mr: 1 }} />
-                                        <Typography sx={{ fontWeight: 600, color: '#1a1a2e', fontSize: { xs: '12px', sm: '14px' } }}>
-                                            teacherssupermarket@gmail.com
-                                        </Typography>
-                                    </Box>
-                                </Box>
+                                <Box
+  sx={{
+    mt: 3,
+    p: 2,
+    background: "#FFFFFF",
+    borderRadius: "8px",
+    border: "2px solid #138808",
+  }}
+>
+  {/* Phone Section */}
+  <Box
+    sx={{
+      display: "flex",
+      alignItems: "center",
+      flexWrap: "wrap",
+      gap: 2,
+      mb: 1,
+    }}
+  >
+    <Phone sx={{ color: "#138808" }} />
+
+    <Typography sx={{ fontWeight: 600, color: "#1a1a2e" }}>
+      8667522314
+    </Typography>
+    <Phone sx={{ color: "#FF9933" }} />
+    <Typography sx={{ fontWeight: 600, color: "#1a1a2e" }}>
+      8939695238
+    </Typography>
+    <Language sx={{ color: "#FF9933", mr: 1 }} />
+    <Typography
+      component="a"
+      href="https://www.tsmarket.in"
+      target="_blank"
+      sx={{
+        fontWeight: 600,
+        color: "#138808",
+        textDecoration: "none",
+      }}
+    >
+      www.tsmarket.in
+    </Typography>
+  </Box>
+
+  {/* Email Section */}
+  <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
+    <Email sx={{ color: "#138808" }} />
+
+    <Typography
+      sx={{
+        fontWeight: 600,
+        color: "#1a1a2e",
+        fontSize: { xs: "12px", sm: "14px" },
+        wordBreak: "break-word",
+      }}
+    >
+      teacherssupermarket@gmail.com
+    </Typography>
+  </Box>
+</Box>
                             </CardContent>
                         </Card>
                     </Grid>
